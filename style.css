@@ -257,12 +257,12 @@ body {
 .grid-wrapper {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 
   @media (max-width: 576px) {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .grid-flex {
@@ -272,12 +272,13 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 16px;
-    min-width: 400px;
+    min-width: 300px;
     min-height: 150px;
-    width: 100%;
+    width: 350px;
 
     @media (max-width: 576px) {
       min-width: 100%;
+      width: 270px;
     }
   }
 
@@ -287,7 +288,6 @@ body {
     font-weight: 300;
     line-height: 25.38px;
     text-align: left;
-
     @media (max-width: 576px) {
       font-size: 16px;
     }
@@ -328,3 +328,145 @@ body {
 }
 
 /* hero grid section ends here */
+
+.quick-wrapper {
+  margin-top: 2rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.quick-flex {
+  background-color: #1b1b1b;
+  border-radius: 16px;
+  min-width: 300px;
+  width: 350px;
+  padding-block: 2rem;
+  min-height: 200px;
+
+  @media (max-width: 576px) {
+    min-width: 100%;
+    width: 270px;
+  }
+
+  a {
+    margin-inline: 2rem;
+  }
+
+  img {
+    margin-inline: 2rem;
+  }
+
+  h2 {
+    margin-inline: 2rem;
+
+    padding-top: 1rem;
+
+    padding-bottom: 2rem;
+  }
+}
+
+.hr-div {
+  margin-block: 2rem;
+
+  @media (max-width: 576px) {
+    margin-block: 1rem;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/* syntax section starts from here */
+
+.syntax-wrapper {
+  margin-top: 4rem;
+
+  img:nth-child(1) {
+    display: block;
+    margin-inline: auto;
+    width: 80%;
+  }
+
+  h2 {
+    font-family: Lexend Exa;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33.84px;
+    text-align: left;
+    text-wrap: balance;
+    margin-bottom: 1rem;
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22.4px;
+    text-align: left;
+    color: #9a9a9a;
+    margin-bottom: 1rem;
+    text-wrap: balance;
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+.syntax-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 4rem;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div:nth-of-type(1) {
+    flex: 1;
+  }
+
+  div:nth-of-type(2) {
+    flex: 1;
+  }
+}
+
+.syntax-flex {
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+      padding-bottom: 15px;
+    }
+
+    @media (max-width: 992px) {
+      justify-content: center;
+    }
+  }
+}
+
+/* syntax section ends here */
