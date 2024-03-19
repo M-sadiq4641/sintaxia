@@ -27,7 +27,7 @@ body {
 
 @font-face {
   font-family: Segoe UI;
-  src: url(/public/fonts/Segoe\ UI.ttf);
+  src: url(/fonts/Segoe\ UI.ttf);
 }
 
 /* main section starts from here */
@@ -245,6 +245,85 @@ body {
     line-height: 33.84px;
     text-align: left;
     color: rgb(194, 192, 192);
+    margin-bottom: 2rem;
+
+    @media (max-width: 576px) {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+}
+
+.grid-wrapper {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .grid-flex {
+    display: flex;
+    gap: 1rem;
+    background-color: #1b1b1b;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    min-width: 400px;
+    min-height: 150px;
+    width: 100%;
+
+    @media (max-width: 576px) {
+      min-width: 100%;
+    }
+  }
+
+  h2 {
+    font-family: Lexend Exa;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25.38px;
+    text-align: left;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22.4px;
+    text-align: left;
+    color: #9a9a9a;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+
+  img:nth-last-of-type(1) {
+    @media (max-width: 576px) {
+      width: 65px;
+    }
+  }
+
+  .a-flex {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+
+    img {
+      @media (max-width: 576px) {
+        padding-left: 5px;
+        width: 15px;
+      }
+    }
   }
 }
 
