@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  color: white;
+}
+
+.container {
+  max-width: 1536px;
+  margin-inline: auto;
+
+  @media (max-width: 1536px) {
+    padding-inline: 4rem;
+  }
+
+  @media (max-width: 992px) {
+    padding-inline: 2rem;
+  }
+
+  @media (max-width: 576px) {
+    padding-inline: 1rem;
+  }
+}
+
+@font-face {
+  font-family: Segoe UI;
+  src: url(/public/fonts/Segoe\ UI.ttf);
+}
+
+/* main section starts from here */
+
+.main-wrapper {
+  display: none;
+  background-color: #4520e6;
+
+  p {
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    padding-block: 5px;
+    text-wrap: balance;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      font-weight: 200;
+      line-height: 12px;
+    }
+  }
+
+  span {
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+/* main section ends here */
+
+/* nav section starts from here  */
+
+.nav-wrapper {
+  display: flex;
+  margin-block: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  div:nth-of-type(1) {
+    flex: 1;
+    img {
+      @media (max-width: 576px) {
+        width: 25px;
+      }
+    }
+  }
+
+  div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    gap: 2rem;
+
+    @media (max-width: 1200px) {
+      flex: none;
+    }
+
+    p {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22.4px;
+      text-align: left;
+      color: #b4aeae;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
+
+    button {
+      background-color: #4520e6;
+      border: none;
+      border-radius: 10px;
+      color: #ffffff;
+      padding: 5px 1rem;
+
+      font-family: Segoe UI;
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      line-height: 24px;
+
+      @media (max-width: 768px) {
+        font-size: 13px;
+        padding: 2px 10px;
+      }
+
+      @media (max-width: 576px) {
+        display: none;
+      }
+    }
+
+    img {
+      display: none;
+      width: 40px;
+
+      @media (max-width: 576px) {
+        display: block;
+      }
+    }
+  }
+}
+
+/* nav section ends here */
+
+/* hero section starts from here */
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  padding-top: 4rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 657px) {
+    gap: 2rem;
+  }
+
+  div:nth-of-type(1) {
+    flex: 1;
+
+    br {
+      @media (max-width: 1430px) {
+        display: none;
+      }
+    }
+
+    h2 {
+      font-family: Lexend Exa;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 56.4px;
+      text-align: left;
+      text-wrap: balance;
+
+      @media (max-width: 1200px) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    span {
+      color: #562fff;
+      display: block;
+    }
+
+    p {
+      text-wrap: balance;
+      font-family: Lexend Exa;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 22.56px;
+      text-align: left;
+      color: #9a9a9a;
+
+      @media (max-width: 1200px) {
+        font-size: 14px;
+      }
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+  }
+
+  div:nth-of-type(2) {
+    flex: 1;
+
+    img {
+      @media (max-width: 1200px) {
+        width: 90%;
+      }
+
+      @media (max-width: 768px) {
+        width: 250px;
+      }
+    }
+  }
+}
+
+/* hero section ends here */
+
+/* hero grid section starts from here */
+
+.hero-grid-wrapper {
+  margin-top: 8rem;
+
+  p {
+    font-family: Lexend Exa;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33.84px;
+    text-align: left;
+    color: rgb(194, 192, 192);
+  }
+}
+
+/* hero grid section ends here */
