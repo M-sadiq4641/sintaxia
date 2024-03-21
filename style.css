@@ -641,6 +641,7 @@ body {
     width: 223px;
     height: 74px;
     border-radius: 50px;
+    cursor: pointer;
 
     @media (max-width: 1500px) {
       width: 170px;
@@ -856,9 +857,11 @@ body {
   }
 
   button {
+    cursor: pointer;
     @media (max-width: 1400px) {
       display: block;
       margin-inline: auto;
+      margin-top: 2rem;
     }
   }
 }
@@ -1194,6 +1197,10 @@ body {
     margin-block: 5px;
   }
 
+  img:nth-child(2) {
+    cursor: pointer;
+  }
+
   div {
     display: flex;
     align-items: center;
@@ -1201,3 +1208,169 @@ body {
   }
 }
 /* built section ends here */
+
+/* token section starts from here */
+
+.token-container {
+  position: relative;
+}
+
+.footer-hr {
+  position: absolute;
+  width: 100%;
+}
+
+.footer-token {
+  position: absolute;
+  left: 40%;
+  bottom: -180px;
+
+  @media (max-width: 768px) {
+    width: 150px;
+    bottom: -150px;
+  }
+
+  @media (max-width: 576px) {
+    bottom: -90px;
+    left: 30%;
+    width: 100px;
+  }
+}
+
+.token-wrapper {
+  display: flex;
+  margin-block: 4rem;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    margin-block: 2rem;
+  }
+
+  .token-black-logo {
+    flex: 1;
+    img {
+      display: block;
+      margin-inline: auto;
+
+      @media (max-width: 768px) {
+        width: 150px;
+      }
+    }
+  }
+
+  div:nth-of-type(2) {
+    flex: 1;
+    h2 {
+      font-family: Lexend Exa;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 45.12px;
+      text-align: left;
+
+      @media (max-width: 768px) {
+        font-size: 25px;
+      }
+
+      @media (max-width: 576px) {
+        text-align: center;
+      }
+    }
+
+    p {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 22.4px;
+      text-align: left;
+      color: #9a9a9a;
+
+      @media (max-width: 768px) {
+        font-size: 12px;
+      }
+
+      @media (max-width: 576px) {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.token-learn-more {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+
+  @media (max-width: 576px) {
+    justify-content: center;
+  }
+  h4 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22.4px;
+    text-align: left;
+  }
+}
+/* token section ends here */
+
+/* footer section starts from here  */
+
+.footer-container {
+  background-color: #4520e6;
+  min-height: 30vh;
+  padding-block: 2rem;
+
+  @media (max-width: 576px) {
+    padding: 0;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 4rem;
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    padding-block: 2rem 1rem;
+  }
+  h2 {
+    font-family: Lexend Exa;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  h3 {
+    font-family: Lexend Exa;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.56px;
+    text-align: left;
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 19.2px;
+    text-align: left;
+    color: #9a9a9a;
+    margin-block: 10px;
+    cursor: pointer;
+  }
+}
+
+/* footer section ends here */
