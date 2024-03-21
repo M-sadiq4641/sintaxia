@@ -584,6 +584,17 @@ body {
   line-height: 80.37px;
   text-align: center;
   margin-block: 4rem;
+
+  @media (max-width: 992px) {
+    font-size: 35px;
+    margin-block: 1rem;
+  }
+  @media (max-width: 576px) {
+    font-size: 27px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    margin-top: 4rem;
+  }
 }
 
 .features-wrapper {
@@ -633,6 +644,22 @@ body {
     @media (max-width: 1400px) {
       position: static;
     }
+
+    @media (max-width: 992px) {
+      font-size: 16px;
+      width: 180px;
+      height: 55px;
+    }
+
+    @media (max-width: 768px) {
+      width: 120px;
+      height: 40px;
+    }
+
+    @media (max-width: 576px) {
+      display: block;
+      margin-inline: auto;
+    }
   }
 }
 
@@ -642,12 +669,47 @@ body {
   align-items: center;
   gap: 4rem;
   min-height: 459px;
+
+  @media (max-width: 768px) {
+    min-height: 300px;
+    gap: 2rem;
+  }
+
+  @media (max-width: 576px) {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
   h2 {
     font-family: Roboto Mono;
     font-size: 80px;
     font-weight: 500;
     line-height: 97px;
     text-align: left;
+
+    @media (max-width: 992px) {
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 35px;
+      line-height: 40px;
+    }
+
+    @media (max-width: 576px) {
+      text-align: center;
+    }
+  }
+
+  img {
+    @media (max-width: 992px) {
+      width: 200px;
+    }
+
+    @media (max-width: 576px) {
+      width: 140px;
+    }
   }
 
   p {
@@ -656,6 +718,19 @@ body {
     font-weight: 400;
     line-height: 97px;
     text-align: left;
+
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 60px;
+    }
+
+    @media (max-width: 576px) {
+      text-align: center;
+    }
   }
 }
 
@@ -678,6 +753,10 @@ body {
     backdrop-filter: blur(115.90799713134766px);
   }
 
+  @media (max-width: 768px) {
+    min-height: 200px;
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -698,6 +777,15 @@ body {
     letter-spacing: -0.03em;
     text-align: left;
     text-wrap: balance;
+
+    @media (max-width: 992px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+      line-height: 60px;
+    }
   }
 
   p {
@@ -706,6 +794,15 @@ body {
     font-weight: 400;
     line-height: 97px;
     text-align: left;
+
+    @media (max-width: 992px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 50px;
+    }
   }
 }
 
@@ -719,4 +816,216 @@ body {
   }
 }
 
+.dotted-image {
+  margin-bottom: 2rem;
+  @media (max-width: 992px) {
+    width: 200px;
+    height: 100px;
+  }
+
+  @media (max-width: 576px) {
+    width: 100px;
+    height: 50px;
+  }
+}
 /* features section ends here */
+
+/* statics section starts from here */
+
+.statics-container {
+  background-color: white;
+  min-height: 100vh;
+  color: black;
+}
+
+.statics-wrapper {
+  h2 {
+    padding-top: 3rem;
+    font-family: Lexend Exa;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33.84px;
+    text-align: center;
+    text-wrap: balance;
+
+    @media (max-width: 992px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 1rem;
+    }
+  }
+
+  p {
+    font-family: Segoe UI;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 24px;
+    text-align: center;
+    text-wrap: balance;
+
+    @media (max-width: 992px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.statics-percent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  margin-block: 4rem;
+
+  @media (max-width: 1200px) {
+    margin-block: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-block: 1rem;
+  }
+
+  h3 {
+    font-family: Roboto Mono;
+    font-size: 57px;
+    font-weight: 500;
+    line-height: 80.37px;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      font-size: 45px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 25px;
+      line-height: 40px;
+    }
+  }
+
+  p {
+    font-family: Lexend Exa;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.56px;
+    text-align: center;
+    color: #9a9a9a;
+    text-wrap: balance;
+
+    @media (max-width: 1200px) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+}
+
+.statics-coding {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin-block: 4rem;
+
+  @media (max-width: 1200px) {
+    margin-block: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: 0rem;
+    gap: 1rem;
+  }
+
+  h3 {
+    font-family: Lexend Exa;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33.84px;
+    text-align: left;
+
+    @media (max-width: 992px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;
+    color: #9a9a9a;
+    text-wrap: balance;
+    padding-top: 1rem;
+
+    @media (max-width: 992px) {
+      font-size: 12px;
+      padding-top: 2px;
+      line-height: 18px;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  img {
+    width: 100%;
+
+    @media (max-width: 768px) {
+      width: 70%;
+      display: block;
+
+      margin-inline: auto;
+    }
+  }
+
+  div {
+    flex: 1;
+  }
+}
+
+.statics-user {
+  h2 {
+    font-family: Lexend Exa;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45.12px;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 6rem;
+    }
+
+    @media (max-width: 350px) {
+      padding-top: 1rem;
+    }
+  }
+
+  p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-align: left;
+    color: #9a9a9a;
+    width: 40%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 12px;
+    }
+  }
+}
+/* statics section ends here  */
