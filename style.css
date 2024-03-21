@@ -837,12 +837,28 @@ body {
 .deploy-div {
   h2 {
     margin-inline: 2rem;
+
+    @media (max-width: 1400px) {
+      text-align: center;
+    }
   }
 
   p {
     margin-inline: 2rem;
+
+    @media (max-width: 1400px) {
+      text-align: center;
+    }
+
     @media (max-width: 400px) {
       line-height: 30px;
+    }
+  }
+
+  button {
+    @media (max-width: 1400px) {
+      display: block;
+      margin-inline: auto;
     }
   }
 }
@@ -1155,6 +1171,14 @@ body {
 
 .built-main-two {
   flex: 1;
+
+  p {
+    font-family: Lexend Exa;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.56px;
+    text-align: left;
+  }
 }
 .built-hr-line {
   width: 100%;
