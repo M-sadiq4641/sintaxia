@@ -923,8 +923,12 @@ body {
 
 .statics-container {
   background-color: white;
-  min-height: 100vh;
+  padding-block: 4rem;
   color: black;
+
+  @media (max-width: 992px) {
+    padding-block: 2rem;
+  }
 }
 
 .statics-wrapper {
@@ -1083,7 +1087,46 @@ body {
   }
 }
 
+/* statics section ends here  */
+
+/* .waghera {
+  background-image: url(/public/images/user-section-screen-img.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+} */
+
+.waghera-two {
+  position: relative;
+
+  img {
+    position: absolute;
+    right: 100px;
+    top: -100px;
+    @media (max-width: 1400px) {
+      width: 40%;
+    }
+
+    @media (max-width: 768px) {
+      top: 60px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 250px;
+    }
+  }
+}
+
 .statics-user {
+  background-color: white;
+  color: black;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
+  @media (max-width: 992px) {
+    padding-top: 2rem;
+  }
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
   h2 {
     font-family: Lexend Exa;
     font-size: 32px;
@@ -1094,7 +1137,8 @@ body {
     @media (max-width: 768px) {
       font-size: 20px;
       line-height: 20px;
-      padding-top: 6rem;
+      padding-top: 3rem;
+      text-align: center;
     }
 
     @media (max-width: 350px) {
@@ -1114,10 +1158,49 @@ body {
     @media (max-width: 768px) {
       width: 100%;
       font-size: 12px;
+      text-align: center;
     }
   }
 }
-/* statics section ends here  */
+
+.crypto-wrapper {
+  padding-block: 8rem;
+
+  @media (max-width: 768px) {
+    padding-bottom: 2rem;
+  }
+
+  @media (max-width: 576px) {
+    padding-top: 12rem;
+  }
+  h2 {
+    font-family: Roboto Mono;
+    font-size: 57px;
+    font-weight: 500;
+    line-height: 80.37px;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      font-size: 35px;
+      line-height: 40px;
+    }
+  }
+
+  p {
+    font-family: Lexend Exa;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.56px;
+    text-align: left;
+    color: #9a9a9a;
+    padding-top: 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+}
 
 /* built section starts from here */
 
@@ -1364,7 +1447,7 @@ body {
   p {
     font-family: Montserrat;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 19.2px;
     text-align: left;
     color: #9a9a9a;
